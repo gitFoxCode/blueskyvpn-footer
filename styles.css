@@ -1,0 +1,313 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+	margin: 0;
+	padding: 0;
+}
+*, *::after, *::before{
+	box-sizing: border-box;
+}
+
+/*////////  END OF RESET CSS, NOW MY CODE: /////////*/
+
+.footer{
+	width: 100%;
+	background-color: #171717;
+	padding-top: 70px;
+
+	font-family: "Poppins", sans-serif;
+	position: relative;
+
+	background-image: url(icons/lock-background.svg), url(icons/shield-background.svg);
+	background-size: 40%, 20%;
+	background-position: -10% 50%, 90% 80%;
+	background-repeat: no-repeat;
+}
+.footer::after{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: -6px;
+	width: 50%;
+	height: 12px;
+	border-radius: 30px;
+	transform: translateX(-50%);
+	background-color: #00B4FF;
+	box-shadow: 0px 0px 20px 0px rgba(52, 241, 248, 0.2);
+}
+.footer__top{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.footer__bottom{
+	padding: 30px;
+	text-align: center;
+	position: relative;
+	margin-top: 50px;
+}
+.footer__bottom p{
+	color: #9F9F9F;
+	font-size: 0.9em;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.footer__bottom__links{
+	margin-top: 20px;
+}
+.footer__bottom::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 80%;
+	height: 1px;
+	transform: translateX(-50%);
+	background-color: #3D3D3D;
+}
+.footer__bottom__links a{
+	text-decoration: none;
+	color: #9F9F9F;
+	font-size: 0.9em;
+	margin: 0 10px;
+}
+.footer__bottom__links a:hover, .footer__bottom__links a:focus{
+	text-decoration: underline;
+}
+.footer__card__title{
+	display: inline-block;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #DCDCDC;
+	padding: 10px 20px;
+	border: 3px solid #00B4FF;
+	border-radius: 20px;
+	white-space: nowrap;
+}
+.footer__card__title-icon{
+	padding-left: 65px;
+	position: relative;
+}
+.footer__card__title-icon::after{
+	content: "";
+	position: absolute;
+	left: -3px;
+	top: -3px;
+	width: 50px;
+	height: 115%;
+	background-color: #00B4FF;
+	border-radius: 20px;
+}
+.title__icon-contact::before{
+	content: "";
+	position: absolute;
+	left: -3px;
+	top: -3px;
+	width: 50px;
+	height: 45px;
+	background: url(icons/contact.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+	z-index: 1;
+}
+.title__icon-vpn::before{
+	content: "";
+	position: absolute;
+	left: -3px;
+	top: -3px;
+	width: 50px;
+	height: 45px;
+	background: url(icons/shield.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40%;
+	z-index: 1;
+}
+.title__icon-question::before{
+	content: "";
+	position: absolute;
+	left: -3px;
+	top: -5px;
+	width: 50px;
+	height: 45px;
+	background: url(icons/question.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 45%;
+	z-index: 1;
+}
+.title__icon-account::before{
+	content: "";
+	position: absolute;
+	left: -3px;
+	top: -3px;
+	width: 50px;
+	height: 45px;
+	background: url(icons/person.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+	z-index: 1;
+}
+.title__icon-download::before{
+	content: "";
+	position: absolute;
+	left: -3px;
+	top: -3px;
+	width: 50px;
+	height: 45px;
+	background: url(icons/download.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 45%;
+	z-index: 1;
+}
+.footer__card__value{
+	display: block;
+	padding-left: 25px;
+	color: #D8D8D8;
+	margin: 15px 0;
+	position: relative;
+	margin-left: 15px;
+	max-width: 250px;
+}
+.value__icon-phone::after{
+	content: "";
+	position: absolute;
+	left:0;
+	top:0;
+	width: 15px;
+	height: 15px;
+	background: url(icons/phone.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.value__icon-mail::after{
+	content: "";
+	position: absolute;
+	left:0;
+	top:0;
+	width: 15px;
+	height: 15px;
+	background: url(icons/mail.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.value__icon-location::after{
+	content: "";
+	position: absolute;
+	left:0;
+	top:0;
+	width: 15px;
+	height: 20px;
+	background: url(icons/home.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.footer__card{
+	margin: 40px;
+}
+.footer__card li a{
+	text-decoration: none;
+	color: #D8D8D8;
+	transition: color 0.3s;
+}
+.footer__card li a:hover, .footer__card li a:focus{
+	text-decoration: underline;
+	transition: color 0.3s;
+	color: #F3F3F3;
+}
+.footer__card ul{
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.footer__card li{
+	margin-bottom: 15px;
+}
+.footer__card__downloads__buttons{
+	margin-left: 10px;
+}
+.footer__card__downloads__buttons a{
+	display: inline-block;
+	margin: 10px 5px;
+}
+.footer__card__downloads{
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px;
+}
+.footer__card__downloads__buttons img{
+	min-width: 130px;
+}
+.footer__card__social{
+	margin-left: 15px;
+	margin-top: 20px;
+}
+.footer__social img{
+	width: 30px;
+}
+.footer__social{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin: 0 10px;
+	transition: box-shadow 0.4s;
+}
+.footer__social:hover,.footer__social a:focus .footer__social{
+	transition: box-shadow 0.4s;
+	box-shadow: 0px 0px 20px 0px rgba(52, 241, 248, 0.3);
+}
